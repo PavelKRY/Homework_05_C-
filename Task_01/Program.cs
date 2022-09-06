@@ -2,7 +2,7 @@
 //Напишите программу, которая покажет количество чётных чисел в массиве.
 //[345, 897, 568, 234] -> 2
 
-int N = 20;
+int N = 15;
 int[] array = new int[N];
 int count = 0;
 for(int i=0;i<N;i++)
@@ -17,9 +17,12 @@ for(int i=0;i<N;i++)
     {
         count += 1;
     }
-    else
-    {
-        Console.WriteLine("Чисел, удовлетворяющих условию нет");
-    }
 }
-Console.WriteLine("Количество чётных чисел в массиве: " + count);
+if(count >= 1)
+{
+    Console.WriteLine("Количество чётных чисел в массиве: " + count);
+}
+else
+{
+    Console.WriteLine("Чисел удовлетворяющих условию нет");
+}
