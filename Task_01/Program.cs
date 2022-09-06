@@ -17,5 +17,9 @@ for(int i=0;i<N;i++)
     {
         count += 1;
     }
+    else
+    {
+        Console.WriteLine("Чисел, удовлетворяющих условию нет");
+    }
 }
 Console.WriteLine("Количество чётных чисел в массиве: " + count);
